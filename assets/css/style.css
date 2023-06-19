@@ -1,0 +1,208 @@
+/* all common css start */
+:root {
+    --barlow-font-family: 'Barlow', sans-serif;
+    --glida-font-family: 'Gilda Display', serif;
+    --yellow-color: #E8A41D;
+    --dark-color: #13172B;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--barlow-font-family);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+}
+.common-btn {
+    padding: 18px 30px;
+    background: var(--yellow-color);
+    border-radius: 4px;
+    border: none;
+}
+.common-btn a {
+    color: var(--dark-color);
+}
+/* all common css end */ 
+
+/****** Header part start *********/
+
+/* menu part start */
+#menu {
+    padding: 17px 0;
+    background: var(--dark-color);
+    top: 0;
+    z-index: 999;
+}
+.navbar-nav .nav-link {
+    margin-right: 20px;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: all linear .3s;
+}
+.navbar-nav .nav-item:hover .nav-link {
+    color: var(--yellow-color);
+}
+.navbar-toggler i {
+    font-size: 42px;
+    color: var(--yellow-color);
+}
+
+.search-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 12px 14px;
+    margin: 8px 25px;
+}
+.search-btn i {
+    color: var(--yellow-color);
+    font-size: 18px;
+}
+.navbar .nav-item {
+    position: relative;
+}
+.navbar .nav-item .sub_menu ul {
+    position: absolute;
+    width: 250px;
+    background-image: linear-gradient(to left top, #000, #02134e);
+    top: 78px;
+    left: 0;
+    transform: translateY(-20px);
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    z-index: 9999;
+    padding: 20px;
+    list-style: none;
+}
+.navbar .nav-item:hover .sub_menu ul {
+    transform: translateY(0px);
+    visibility: visible;
+}
+.navbar .nav-item .sub_menu ul li {
+    padding: 5px 0;
+    margin-left: 0;
+    border-bottom: 1px solid #dddddd26;
+}
+.navbar .nav-item .sub_menu ul li a {
+    color: #fff;
+}
+.navbar .nav-item .sub_menu ul li:hover a {
+     color: var(--yellow-color);
+}
+.navbar .nav-item .sub_menu ul li:last-child{
+    border-bottom: none;
+}
+
+.menubg {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    animation: menu 1s;
+    z-index: 999999;
+}
+@keyframes menu {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+/* menu part end */
+
+/***** Header Part end *******/
+
+/******** Banner part start **********/
+.banner_part {
+    height: 850px;
+    background: rgba(45, 62, 80, 0.5);
+    position: relative;
+}
+.banner_part .banner_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner_part .bg-overlay {
+    position: absolute;
+    top: 0;
+    background: #000000;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+.banner_part .banner_bg img {
+    width: 100%;
+    height: 100%;
+}
+.banner_part .banner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+}
+.banner_part .banner_text h1 {
+    font-family: var(--glida-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.banner_part .banner_text p {
+    font-family: var(--barlow-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+#banner .prev {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: #fff;
+    transition: .3s;
+}
+
+#banner .next {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: #fff;
+    transition: .3s;
+}
+#banner .prev:hover, #banner .next:hover {
+    border: 1px solid var(--yellow-color);
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+/******** Banner part end ************/
