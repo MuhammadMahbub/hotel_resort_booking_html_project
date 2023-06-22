@@ -22,5 +22,17 @@ $(document).ready(function() {
         nextArrow: ('<i class="fa-solid fa-arrow-right next"></i>'),
     });
 
+    // Service part slider
+    $('.service_slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: ('<i class="fa-solid fa-arrow-left prev"></i>'),
+        nextArrow: ('<i class="fa-solid fa-arrow-right next"></i>'),
+    });
+
 
 })

@@ -6,6 +6,7 @@
     --dark-color: #13172B;
     --text-color: #1F3347;
     --form-color: #70717B;
+    --bg-color: #F8F5F0;
 }
 body {
     color: var(--text-color);
@@ -23,6 +24,7 @@ ul, li {
 ol, ul, li {
     padding: 0;
 }
+
 a {
     text-transform: uppercase;
     text-decoration: none;
@@ -39,6 +41,29 @@ a {
 }
 .common-btn a {
     color: var(--dark-color);
+}
+
+.common_title {
+    font-family: var(--glida-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.common_para {
+    font-family: var(--barlow-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--form-color);
+    line-height: 24px;
+}
+.subtitle{
+    font-size: 16px;
+    font-family: var(--barlow-font-family);
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 3.2px;
 }
 /******** all common css end******** */ 
 
@@ -233,7 +258,7 @@ a {
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-#banner .prev {
+.prev {
     height: 50px;
     width: 50px;
     background: transparent;
@@ -250,7 +275,7 @@ a {
     transition: .3s;
 }
 
-#banner .next {
+.next {
     height: 50px;
     width: 50px;
     background: transparent;
@@ -266,7 +291,7 @@ a {
     color: #fff;
     transition: .3s;
 }
-#banner .prev:hover, #banner .next:hover {
+.prev:hover, .next:hover {
     border: 1px solid var(--yellow-color);
     color: var(--yellow-color);
     cursor: pointer;
@@ -274,17 +299,15 @@ a {
 /******** Banner part end ************/
 
 /******** checkInOut part start ************/
-.check_box {
+#checkInOut {
     position: relative;
 }
-#checkInOut {
+#checkInOut .container {
     position: absolute;
     top: -125px;
     left: 50%;
     transform: translateX(-50%);
     background: #fff;
-}
-#checkInOut .container {
     padding: 33px 51px;
     box-shadow: 0px 10px 20px rgba(228, 226, 238, 0.4);
     border-radius: 4px;
@@ -316,5 +339,286 @@ a {
     font-weight: 600;
     font-size: 16px;
 }
-
 /******** checkInOut part end ************/
+
+/******** hotelInfo part start ************/
+#hotelInfo {
+    padding: 250px 0 120px 0;
+    background: #fff;
+}
+.hotel_info_heading {
+    margin: auto;
+    width: 46%;
+    margin-bottom: 60px;
+}
+.hotel_info_heading h2 {
+    padding: 0 50px;
+}
+.hoten_info_card .card {
+    padding: 30px 25px;
+    box-shadow: 0px 6px 20px rgba(228, 226, 238, 0.8);
+    border-radius: 4px;
+    border: none;
+}
+.hoten_info_card .card_img {
+    width: 60px;
+    height: 70px;
+    margin: auto;
+}
+.hoten_info_card .card-title {
+    font-size: 28px;
+}
+.hoten_info_card .card-text {
+    font-weight: 500;
+}
+/******** hotelInfo part end ************/
+
+/******** roomInfo part end ************/
+#roomInfo {
+    padding: 120px 0;
+    background: var(--bg-color);
+}
+.room_info_heading p {
+    padding: 0 27%;
+    padding-bottom: 60px;
+}
+.room_info {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    position: relative;
+    transition: 0.3s ;
+}
+.room_info_hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    height: 92%;
+    border-radius: 4px;
+    border: none;
+    padding: 38px 30px;
+    visibility: hidden;
+}
+.room_info:hover .room_info_hover {
+    visibility: visible;
+    animation: room .3s;
+}
+@keyframes room {
+    from {
+        top: 40%;
+    }
+    to {
+        top: 50%;
+    }
+}
+.room_star span {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--yellow-color);
+}
+.room_star h2 {
+    padding-top: 5px;
+    font-size: 30px;
+}
+.room_price h2 {
+    font-family: var(--barlow-font-family);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--yellow-color);
+    margin-bottom: 5px;
+}
+.room_price p {
+    font-weight: 500;
+}
+.room_info_para {
+    margin: 10px 0 25px 0;
+}
+.room_facility_img {
+    height: 35px;
+    width: 40px;
+    margin-right: 15px;
+} 
+.room_facility p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.room_info_hover .common-btn {
+    width: 60%;
+    margin-top: 12px;
+    padding: 16px 0px;
+}
+.room_card_image {
+    height: 480px;
+    background-image: url(../images/room/room1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    position: relative;
+}
+.card_image2 {
+    background-image: url(../images/room/room2.png);
+}
+.card_image3 {
+    background-image: url(../images/room/room3.png);
+}
+.card_image4 {
+    background-image: url(../images/room/room4.png);
+}
+.card_image5 {
+    background-image: url(../images/room/room5.png);
+}
+.card_image6 {
+    background-image: url(../images/room/room4.png);
+}
+
+.room_card_image .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.062) 0%, rgba(0, 0, 0) 79.74%), #c4c4c400;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.room_card_image .card-body {
+    position: relative;
+    bottom: -70%;
+}
+.room_card_image .room_price {
+    margin-top: 8%;
+}
+.room_info_card .row {
+    margin-bottom: 50px;
+}
+/******** roomInfo part end ************/
+
+/******** About Us part end ************/
+#about_us{
+    padding-top: 116px;
+    padding-bottom: 120px;
+}
+#about_us .common_title {
+    line-height: 44px;
+    padding-right: 30%;
+}
+#about_us .common_para {
+    padding-right: 5%;
+}
+#about_us .pricing_image {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px 0px rgba(228, 226, 238, 0.80);
+    text-align: center;
+    line-height: 60px;
+}
+#about_us .pricing_image img {
+    padding: 10px;
+}
+#about_us .pricing_text {
+    padding-left: 20px;
+}
+#about_us .pricing_text h6 {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-family: var(--glida-font-family);
+    line-height: 28px;
+}
+#about_us .common-btn {
+    margin-top: 40px;
+}
+.about_us_image {
+    position: relative;
+    background-image: url(../images/hotel/bg-2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_us_image .image1 {
+    height: 500px;
+    width: 424px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 24px 0px #E4E2EE;
+    background-image: url(../images/room/room3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_us_image .image2 {
+    height: 280px;
+    width: 266px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 24px 0px #E4E2EE;
+    background-image: url(../images/room/room5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -5%;
+    right: -4%;
+}
+/******** About Us part end ************/
+
+/******** Service part start ************/
+#service {
+    padding: 120px 0;
+    background: var(--bg-color);
+}
+#service .service_slider {
+    width: 80%;
+    height: 550px;
+    margin: auto;
+}
+#service .slider_image {
+    width: 45%;
+    height: 550px;
+}
+#service .slider_image img {
+    width: 100%;
+    height: 100%;
+}
+#service .service_info {
+    padding: 55px 50px;
+    background: #fff;
+    height: 550px;
+    width: 55%;
+}
+.service_icon {
+    margin-top: -1px;
+}
+.service_icon i{
+    padding: 3px;
+    color: var(--yellow-color);
+    font-size: 12px;
+    border: 1px solid var(--yellow-color);
+    border-radius: 50%;
+}
+.service_name {
+    width: 140px;
+    margin-left: 15px;
+}
+.service_rate {
+    margin-left: 20px;
+}
+.service_slider .common-btn {
+    margin-top: 40px;
+}
+#service .prev {
+    left: -12%;
+    color: var(--yellow-color);
+    border: 2px solid var(--yellow-color);
+}
+#service .next {
+    right: -12%;
+    color: var(--yellow-color);
+    border: 2px solid var(--yellow-color);
+}
+#service .prev:hover, #service .next:hover {
+    color: var(--dark-color);
+    background: var(--yellow-color);
+    cursor: pointer;
+}
+/******** Service part end ************/
