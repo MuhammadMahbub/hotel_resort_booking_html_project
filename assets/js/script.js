@@ -35,4 +35,16 @@ $(document).ready(function() {
     });
 
 
+    // Partner part slider
+    $('.partner_slider').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+    });
+
+
 })

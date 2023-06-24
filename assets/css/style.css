@@ -24,7 +24,10 @@ ul, li {
 ol, ul, li {
     padding: 0;
 }
-
+p, h2, h6 {
+    margin: 0;
+    padding: 0;
+}
 a {
     text-transform: uppercase;
     text-decoration: none;
@@ -50,6 +53,7 @@ a {
     font-size: 36px;
     color: var(--text-color);
     text-transform: capitalize;
+    margin-top: 20px;
 }
 .common_para {
     font-family: var(--barlow-font-family);
@@ -57,6 +61,8 @@ a {
     font-size: 16px;
     color: var(--form-color);
     line-height: 24px;
+    padding-top: 15px !important;
+    margin-bottom: 30px;
 }
 .subtitle{
     font-size: 16px;
@@ -64,6 +70,7 @@ a {
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 3.2px;
+    text-transform: uppercase;
 }
 /******** all common css end******** */ 
 
@@ -421,6 +428,8 @@ a {
 .room_star h2 {
     padding-top: 5px;
     font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 .room_price h2 {
     font-family: var(--barlow-font-family);
@@ -432,8 +441,9 @@ a {
 .room_price p {
     font-weight: 500;
 }
-.room_info_para {
-    margin: 10px 0 25px 0;
+.room_info_hover .room_info_para {
+    padding-top: -10px;
+    margin: -20px 0 20px 0;
 }
 .room_facility_img {
     height: 35px;
@@ -444,19 +454,30 @@ a {
     font-weight: 500;
     margin-top: 10px;
 }
+.room_info_hover .room_price h2 {
+    margin-top: 0;
+}
 .room_info_hover .common-btn {
     width: 60%;
-    margin-top: 12px;
+    margin-top: 0px;
     padding: 16px 0px;
+}
+ .room_price h2 {
+    margin-bottom: -12px;
+}
+.room_facility p {
+    margin-top: -5px;
 }
 .room_card_image {
     height: 480px;
-    background-image: url(../images/room/room1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 4px;
     position: relative;
+}
+.card_image1 {
+    background-image: url(../images/room/room1.png);
 }
 .card_image2 {
     background-image: url(../images/room/room2.png);
@@ -473,7 +494,6 @@ a {
 .card_image6 {
     background-image: url(../images/room/room4.png);
 }
-
 .room_card_image .overlay {
     position: absolute;
     top: 0;
@@ -488,10 +508,16 @@ a {
     bottom: -70%;
 }
 .room_card_image .room_price {
-    margin-top: 8%;
+    margin-top: 17px;
 }
-.room_info_card .row {
-    margin-bottom: 50px;
+.room_card_image .room_star p {
+    padding-top: 0 !important;
+}
+.room_info_card .room_facility {
+    margin-bottom: 0px;
+}
+.view_btn button {
+    margin-top: 56px;
 }
 /******** roomInfo part end ************/
 
@@ -500,12 +526,18 @@ a {
     padding-top: 116px;
     padding-bottom: 120px;
 }
+#about_us .about_left_col {
+    margin-top: 50px !important;
+}
 #about_us .common_title {
     line-height: 44px;
     padding-right: 30%;
 }
 #about_us .common_para {
     padding-right: 5%;
+}
+#about_us .pricing_text .common_para {
+    padding-top: 10px !important;
 }
 #about_us .pricing_image {
     height: 60px;
@@ -604,7 +636,7 @@ a {
     margin-left: 20px;
 }
 .service_slider .common-btn {
-    margin-top: 40px;
+    margin-top: 24px;
 }
 #service .prev {
     left: -12%;
@@ -622,3 +654,294 @@ a {
     cursor: pointer;
 }
 /******** Service part end ************/
+
+/******** popular_room part end ************/
+#popular_room {
+    padding: 100px 0;
+}
+.popular_room_info {
+    margin-bottom: 24px;
+}
+/*  .popular_room_price.large_div {
+    margin-top: 3%;
+} */
+#popular_room .room_star {
+    margin-top: -45px;
+}
+#popular_room .room_star .common-btn {
+    background: transparent;
+    border: 1px solid var(--yellow-color);
+    transition: 0.3s;
+}
+#popular_room .room_star .common-btn a {
+    color: #fff;
+}
+#popular_room .room_star .common-btn:hover {
+    background: var(--yellow-color);
+}
+#popular_room .room_star .common-btn:hover a {
+    color: var(--dark-color);
+}
+/******** popular_room part end ************/
+
+/******** testimonial part end ************/
+#testimonial {
+    background-color: var(--bg-color);
+}
+.testimonial_image {
+    height: 564px;
+}
+.testimonial_image img {
+    width: 100%;
+    height: 100%;
+}
+.testimonial_info {
+    margin-left: 60px;
+    padding-top: 120px;
+    background-image: url(../images/testimonial/bg_img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonial_info h2.common_title {
+    padding-right: 55%;
+}
+.testimonial_info p.common_para {
+    padding-right: 35%;
+}
+.testimonial_info .common_para {
+    padding-bottom: 0px;
+}
+.testimonial_info .member_image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.testimonial_info .member_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.testimonial_info .member_info {
+    margin-left: 15px;
+}
+.testimonial_info .member_info h6 {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-family: var(--glida-font-family);
+    line-height: 20px;
+}
+.testimonial_info .member_info .common_para {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: 500;
+}
+.testimonial_info .member_info span {
+    color: var(--yellow-color);
+}
+.testimonial_info .member_info span i {
+    font-size: 14px;
+}
+/******** testimonial part end ************/
+
+/******** partner part start ************/
+#partner {
+    padding: 60px 0 90px 0;
+}
+.partner_logo {
+    width: 150px;
+    height: 100px;position: relative;}
+.partner_logo img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/******** partner part end ************/
+
+/******** Blog part start ************/
+#blog {
+    padding: 80px 0 255px 0;
+    background-image: url(../images/blog/bg-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#blog .blog_heading {
+    margin-bottom: 60px;
+}
+#blog .main_blog {
+    padding: 0;
+    height: 528px;
+    width: 45%;
+    margin-right: 20px;
+    position: relative;
+}
+#blog .main_blog img {
+    height: 100%;
+}
+#blog .blog_post_info {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid var(--form-color);
+    padding: 26px 28px;
+}
+.blog_post_info .common_title, .small_blog_text .common_title {
+    font-size: 30px;
+    margin-top: 0;
+}
+.blog_post_info ul li i, .small_blog_text ul li i {
+    color: var(--yellow-color);
+    margin-right: 10px;
+}
+#blog .small_blog_image {
+    height: 160px;
+}
+#blog .small_blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+#blog .small_blog:last-child {
+    margin-bottom: 0;
+}
+#blog .small_blog_image img {
+    width: 100%;
+    height: 100%;
+}
+.small_blog_text .common_title {
+    padding-right: 50px;
+}
+.small_blog_text .common_para {
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+/******** Blog part end ************/
+
+/******** footer part start ************/
+#footer {
+    padding: 280px 0 160px 0;
+    background-color: var(--dark-color);
+}
+.footer_logo {
+    width: 170px;
+    height: 55px;
+}
+.footer_logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer_col1 p {
+    font-weight: 500;
+    padding-top: 20px !important;
+    margin-bottom: 35px;
+}
+.footer_col1 h6 {
+    font-size: 20px;
+    font-family: var(--barlow-font-family);
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.footer_col1 ul {
+    gap: 20px;
+}
+.footer_col1 ul li i {
+    color: #fff;
+    font-size: 16px;
+}
+.footer_links .common_title, .footer_address .common_title, .footer_gallery .common_title {
+    font-size: 30px;
+    margin: 15px 0 20px 0;
+}
+.footer_links ul li, .footer_address ul li {
+    margin-bottom: 20px;
+}
+.footer_links i, .footer_address i {
+    font-size: 16px;
+    color: var(--yellow-color);
+}
+.footer_links .common_para, .footer_address .common_para {
+    color: #fff;
+    margin-left: 15px;
+}
+.footer_address ul {
+    margin-top: 30px;
+}
+.footer_address .common_para {
+    padding-right: 80px;
+    padding-top: 0 !important;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.footer_gallery .common_title {
+    margin-bottom: 30px;
+}
+.footer_gallery .gallery_img {
+    width: 32%;
+    margin-bottom: 20px;
+}
+.footer_gallery .gallery_img img {
+    height: 100%;
+}
+
+/* subscribe part start */
+footer {
+    position: relative;
+}
+#subscribe {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+}
+
+#subscribe .container{
+    padding: 60px 0 60px 0;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+.subscribe_form {
+    width: 522px;
+    margin: auto;
+}
+.subscribe_form input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+}
+.subscribe_form input::placeholder {
+    font-size: 16px;
+    font-family: var(--barlow-font-family);
+    color: var(--form-color);
+}
+.subscribe_heading .common_title {
+    margin-bottom: 40px;
+}
+.subscribe_form {
+    position: relative;
+}
+.subscribe_form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 30px;
+}
+/* subscribe part end */
+
+/******** footer part end ************/
+
+/******** copyright part end ************/
+#copyright {
+    padding: 20px 0;
+    text-align: center;
+}
+#copyright p {
+    font-weight: 500;
+}
+/******** copyright part end ************/
