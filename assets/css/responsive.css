@@ -4,10 +4,113 @@
 
 
 @media only screen and (max-width: 1199px) {
-    
+    /* hesder part */
+    .header_address ul li {
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    .header_address ul li span, .language_change span {
+        padding-right: 5px;
+        font-size: 16px;
+    }
+    #header_top .language_change .form-select {
+        font-size: 14px;
+    }
+    #menu .navbar-brand img {
+        width: 80%;
+    }
+    #navbarNav .nav-item a {
+        font-size: 14px;
+    }
+    .navbar-nav .nav-link {
+        margin-right: 0;
+    }
+    .common-btn {
+        padding: 16px 20px;
+    }
+    /* header part */
+
+    /* banner part */
+    .banner_part .banner_text h1 {
+        font-size: 64px;
+    }
+    .banner_part .banner_text p {
+        font-size: 32px;
+    }
+    /* banner part */
+
+    /* hotel part */
+    .hotel_info_heading {
+        width: 64%;
+    }
+
+    /* room part */
+    .room_info_heading p {
+        padding: 0 18%;
+    }
+    .room_star h2, .room_price h2 {
+        font-size: 26px;
+    }
+    .room_info_hover {
+        padding: 20px 10px;
+    }
+    .room_facility .col-6.d-flex {
+        margin-bottom: -10px;
+    }
+    .room_info_card .room_facility p {
+        margin-bottom: 25px;
+    }
+    /* room part */
+
+    /* about part */
+    #about_us .common_title {
+        padding-right: 6%;
+    }
+    /* about part */
+
+    /* testimonial part */
+    .testimonial_info h2.common_title {
+        padding-right: 15%;
+    }
+    /* testimonial part */
+
+    /* blog part */
+    .small_blog_text .common_title {
+        margin-bottom: 10px;
+    }
+    /* blog part */
+
+    /* footer part */
+    .footer_address .common_para {
+        padding-right: 15px;
+    }
+    /* footer part */
 }
 
 @media only screen and (max-width: 991px) {
+    /* common */
+    #roomInfo, #about_us, #service, #popular_room {
+        padding: 60px 0;
+    }
+
+    /* header top part */
+    .header_address ul li {
+        font-size: 12px;
+        margin-right: 20px;
+        font-weight: normal;
+    }
+    .header_address ul li span, .language_change span {
+        padding-right: 2px;
+        font-size: 12px;
+    }
+    .header_address ul li::after {
+        height: 10px;
+    }
+    #header_top .language_change .form-select {
+        font-size: 12px;
+    }
+    /* header top part */
+
     /* menu part start */
     div#navbarNav {
         margin-top: 20px;
@@ -20,12 +123,253 @@
         left: 150px;
     }
     /* menu part end */
+
+    /* banner part */
+    .banner_part {
+        height: 650px;
+    }
+    .banner_part .banner_text, #banner .next, #banner .prev {
+        top: 40%;
+    }
+    .banner_part .banner_text h1 {
+        font-size: 50px;
+        padding: 0 10%;
+        line-height: 60px;
+    }
+    .banner_part .banner_text p {
+        font-size: 26px;
+    }
+    /* banner part */
+
+    /* check part */
+    #checkInOut .common-btn.check_btn {
+        padding: 11px;
+    }
+    #checkInOut .container {
+        top: -175px;
+    }
+    /* check part */
+
+    /* hotel part */
+    #hotelInfo {
+        padding: 230px 0 60px 0;
+    }
+    .hotel_info_heading h2 {
+        padding: 0;
+    }
+    .hotel_info_heading {
+        width: 74%;
+    }
+    .hoten_info_card .card {
+        margin-bottom: 20px;
+    }
+    /* hotel part */
+
+    /* room part */
+    .room_info_heading p {
+        padding: 0 10%;
+    }
+    .room_info_hover .card-top.d-flex.justify-content-between {
+        margin-top: 15px;
+    }
+    /* room part */
+
+    /* about_us part */
+    #about_us .common_title, #about_us .common_para {
+        padding: 0;
+    }
+    #about_us .common-btn {
+        margin-bottom: 40px;
+    }
+    .about_us_image .image2 {
+        right: 6%;
+    }
+    /* about_us part */
+
+    /* service part */
+    #service .service_info {
+        padding: 20px;
+    }
+    .service_name, .service_rate {
+        margin: 0 6px;
+    }
+    .service_info .common_para {
+        margin-bottom: 15px;
+    }
+    .service_list ul {
+        margin-bottom: 0;
+    }
+    .service_slider .common-btn {
+        margin-top: 15px;
+    }
+    /* service part */
+
+    /* testimonial part */
+    .testimonial_info {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .testimonial_info h2.common_title, .testimonial_info p.common_para {
+        padding: 0;
+    }
+    /* testimonial part */
+    #partner {
+        padding-bottom: 30px;
+    }
+
+    /* blog part */
+    #blog {
+        padding: 60px 0 210px 0;
+    }
+    #blog .main_blog {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .small_blog_text {
+        margin-top: 0px;
+    }
+    /* blog part */
+
+    /* subscribe part */
+    #subscribe {
+        top: -15%;
+    }
+    .subscribe_form {
+        width: 72%;
+    }
+    /* subscribe part */
+
+    /* footer part */
+    #footer {
+        padding: 220px 0 60px 0;
+    }
+    /* footer part */
 }
 
 @media only screen and (max-width: 767px) {
-    
+    #header_top .header_address ul {
+        display: block !important;
+    }
+    .header_address ul li::after {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 575px) {
-    
+    /* banner part */
+    .banner_part .banner_text h1 {
+        font-size: 38px;
+        padding: 0 25%;
+        line-height: 50px;
+    }
+    .banner_part .banner_text p {
+        font-size: 20px;
+        margin-top: 75px;
+    }
+    /* banner part */
+
+    /* about us  part */
+    #about_us {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .about_us_image .image1 {
+        width: 320px;
+        height: 360px;
+    }
+    .about_us_image .image2 {
+        height: 200px;
+        width: 200px;
+        left: 40%;
+    }
+    #about_us .container {
+        text-align: center;
+    }
+    #about_us .common-btn {
+        margin-top: 0;
+    }
+    /* about us  part */
+
+    /* hotel part */
+    .hoten_info_card .common_title, .hoten_info_card .common_para {
+        margin: 0;
+        padding: 0;
+    }
+    /* hotel part */
+
+    /* room part */
+    .room_info_hover .card-top {
+        margin-top: 30px;
+    }
+    /* room part */
+
+    /* service part */
+    #service {
+        padding-bottom: 230px;
+    }
+    #service .service_slider {
+        width: 100%;
+    }
+    #service .service_slider .row {
+        display: block;
+
+    }
+    #service .slider_image {
+        width: 100%;
+        height: 235px;
+    }
+    #service .service_info {
+        height: 530px;
+        width: 100%;
+        padding: 25px;
+    }
+    .service_info h6 {
+        margin-top: 70px;
+    }
+    .service_info .common_para {
+        margin-right: 15px;
+    }
+    #service .prev {
+        left: 0;
+    }
+    #service .next {
+        right: 0;
+    }
+    .service_list ul {
+        margin-bottom: 5px;
+    }
+    /* service part */
+
+    /* testimonial  part */
+    .testimonial_info {
+        margin-left: 30px;
+    }
+    /* testimonial  part */
+
+    /* subscribe  part */
+    .subscribe_form {
+        width: 90%;
+    }
+    .subscribe_form button {
+        padding: 14px;
+    }
+    /* subscribe  part */
+
+@media only screen and (max-width: 374px) {
+    .banner_part .banner_text h1 {
+        padding: 0 30%;
+    }
+    .banner_part .banner_text p {
+        padding: 0 35%;
+    }
+    #hotelInfo {
+        margin-top: 300px;
+    }
+    .about_us_image .image1 {
+        width: 280px;
+    }
+}
+
+@media only screen and (max-width: 323px) {
+
 }

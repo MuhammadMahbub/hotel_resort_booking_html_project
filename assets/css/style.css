@@ -107,7 +107,7 @@ a {
 .header_address ul li::after {
     position: absolute;
     content: "";
-    right: -20px;
+    right: -10%;
     top: 50%;
     transform: translateY(-50%);
     background-color: var(--dark-color);
@@ -120,7 +120,7 @@ a {
 #header_top .language_change .form-select {
     background-color: transparent;
     border: transparent;
-    padding-right: 27px;
+    padding-right: 30px;
     padding-left: 0;
     font-family: var(--barlow-font-family);
     font-weight: 600;
@@ -378,6 +378,15 @@ a {
 .hoten_info_card .card-text {
     font-weight: 500;
 }
+.room_facility .col-lg-6.col-sm-12.d-flex {
+    margin-bottom: -15px;
+}
+/* .room_info_hover .card-top {
+    margin-top: -20px;
+} */
+.room_info_card .room_facility p {
+    margin-bottom: 15px;
+}
 /******** hotelInfo part end ************/
 
 /******** roomInfo part end ************/
@@ -459,7 +468,7 @@ a {
 }
 .room_info_hover .common-btn {
     width: 60%;
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 16px 0px;
 }
  .room_price h2 {
@@ -522,9 +531,8 @@ a {
 /******** roomInfo part end ************/
 
 /******** About Us part end ************/
-#about_us{
-    padding-top: 116px;
-    padding-bottom: 120px;
+#about_us {
+    padding: 120px 0;
 }
 #about_us .about_left_col {
     margin-top: 50px !important;
@@ -590,7 +598,7 @@ a {
     background-size: cover;
     position: absolute;
     bottom: -5%;
-    right: -4%;
+    left: 35%;
 }
 /******** About Us part end ************/
 
@@ -609,7 +617,7 @@ a {
     height: 550px;
 }
 #service .slider_image img {
-    width: 100%;
+    width: 104%;
     height: 100%;
 }
 #service .service_info {
@@ -662,9 +670,6 @@ a {
 .popular_room_info {
     margin-bottom: 24px;
 }
-/*  .popular_room_price.large_div {
-    margin-top: 3%;
-} */
 #popular_room .room_star {
     margin-top: -45px;
 }
@@ -704,7 +709,7 @@ a {
     background-size: cover;
 }
 .testimonial_info h2.common_title {
-    padding-right: 55%;
+    padding-right: 40%;
 }
 .testimonial_info p.common_para {
     padding-right: 35%;
@@ -750,12 +755,14 @@ a {
 }
 .partner_logo {
     width: 150px;
-    height: 100px;position: relative;}
+    height: 100px;position: relative;
+}
 .partner_logo img {
     width: 70%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /******** partner part end ************/
 
@@ -813,6 +820,9 @@ a {
 #blog .small_blog_image img {
     width: 100%;
     height: 100%;
+}
+#blog .small_blog ul {
+    flex-wrap: wrap;
 }
 .small_blog_text .common_title {
     padding-right: 50px;
@@ -907,7 +917,7 @@ footer {
     border-radius: 10px;
 }
 .subscribe_form {
-    width: 522px;
+    width: 56%;
     margin: auto;
 }
 .subscribe_form input {
@@ -945,3 +955,21 @@ footer {
     font-weight: 500;
 }
 /******** copyright part end ************/
+
+/* ################  HOME PAGE 2ND  ############### */
+
+/* header top part start */
+.header_top2 {
+    background-color: var(--dark-color) !important;
+}
+.header_top2 .header_address ul li, .header_top2 .language_change span, .header_top2 .language_change .form-select {
+    color: #fff;
+}
+.header_top2 .language_change .form-select {
+    background-image: url(../images/circle-chevron-down-solid.svg);
+}
+.header_top2 .language_change .form-select option{
+    background: var(--form-color);
+}
+/* header top part end */
+/* ################  HOME PAGE 2ND  ############### */
